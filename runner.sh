@@ -1,5 +1,4 @@
-#!/bin/bash
-echo"Ravi : Hi ra wawa"
+#!/bin/bash/
 echo "raju : ala vunnav ra"
 echo "Ravi : super ga vunna ra"
 echo "raju : tinnava ra"
