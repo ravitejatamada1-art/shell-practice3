@@ -1,7 +1,7 @@
 #!/bin/bash
 
-person1=ravi
-person2=raju
+person1=modi
+person2=rahul
 
 echo "$person1 : ala vunnav ra"
 echo "$person2 : super ga vunna ra"
