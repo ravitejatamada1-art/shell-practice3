@@ -1,7 +1,7 @@
 #!/bin/bash
 
-person1=modi
-person2=rahul
+person1=$1
+person2=$2
 
 echo "$person1 : ala vunnav ra"
 echo "$person2 : super ga vunna ra"
