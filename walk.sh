@@ -1,2 +1,4 @@
 #!/bin/bash
-walk in th river of ganga 
+echo "enter your pin number : "
+read pin
+echo "your pin number is : $pin"
