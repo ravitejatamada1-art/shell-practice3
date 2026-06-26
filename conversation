@@ -1,7 +1,7 @@
-person3=modi
-person2=salaar
+$1=modi
+$2=salaar
 
-echo "$person3 : Hii ra Ravi"
-echo "$person2 : bagunna ra"
-echo "$person3 : what about u ra"
-echo "$person2 : nothing ra"
+echo "$$1 : Hii ra Ravi"
+echo "$$2 : bagunna ra"
+echo "$$1 : what about u ra"
+echo "$$2 : nothing ra"
