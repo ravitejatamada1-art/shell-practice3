@@ -1,0 +1,6 @@
+PERSON1=raju
+PERSON2=ravi
+PERSON3=ramu
+echo "$PERSON1 : Hi ra $PERSON2"
+echo "$PERSON2 : Hi ra $PERSON1"
+echo "$PERSON3 : hI Guys $PERSON1 AND $PERSON2"
