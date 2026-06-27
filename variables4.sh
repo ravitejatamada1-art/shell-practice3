@@ -1,3 +1,3 @@
 echo "enter PIN number : "
-read -s PIN
+read -sPIN
 echo "your PIN is :$PIN"
