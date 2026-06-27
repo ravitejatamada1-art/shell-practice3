@@ -1,2 +1,2 @@
-MOVIES=("HIT""Vikram""Basha")
-echo " print thirfd movie : $MOVIES[2]"
+MOVIES=("HIT" "Vikram" "Basha")
+echo " print thirfd movie : ${MOVIES[2]}"
