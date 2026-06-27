@@ -1,3 +1,3 @@
 echo "enter PIN number : "
 read PIN
-echo "your PIN is :"
+echo "your PIN is :$PIN"
