@@ -1,7 +1,13 @@
 USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then 
-echo "failed to install python"
+echo "ready to install nginx"
+exit 1
 else
-echo "install python as a admin"
+echo "install nginx"
 fi
+
+#echo "failed to install python"
+#else
+#echo "install python as a admin user"
+#fi
