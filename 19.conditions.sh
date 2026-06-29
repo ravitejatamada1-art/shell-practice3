@@ -7,4 +7,4 @@ then
 }
 else{
     echo "$NUMBER is greater than or equal to 10"
-    fi}
+}fi
