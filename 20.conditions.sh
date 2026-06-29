@@ -1,5 +1,5 @@
 NUMBER=20
-IF[ $NUMBER -lt 50 ]
+if [ $NUMBER -lt 50 ]
 then
 echo "the given $NUMBER is less than 50"
 else
