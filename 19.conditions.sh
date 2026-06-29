@@ -1,5 +1,6 @@
-NUMBER=10
-if [NUMBER -lt 10]{
+NUMBER=$1
+if [NUMBER -lt 10]
+{
    echo "number is less than 10" 
 }
 echo
