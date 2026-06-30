@@ -3,6 +3,7 @@ then
 echo "Installing mysql in mobx"
 else
 echo "installing failed of mobx"
+exit 1
 fi
 dnf install mysql -y
 exit 1
