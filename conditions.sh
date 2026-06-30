@@ -1,7 +1,7 @@
 if  [ $USERID -eq 0 ]
 then
 echo "Installing mysql in mobx"
-exit 0
+exit 1
 else
 echo "installing failed of mobx"
 fi
