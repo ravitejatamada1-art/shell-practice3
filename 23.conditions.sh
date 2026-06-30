@@ -3,9 +3,10 @@ if [ $? -eq 0 ]
 then
  echo "install nginx successfully"
 else
+exit 1
 echo "install nginx failed"
 fi
-exit 1
+
 if [ $? -ne 0 ]
 then 
 echo "bad day "
