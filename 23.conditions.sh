@@ -4,7 +4,6 @@ then
  echo "install nginx successfully"
 else
 echo "install nginx failed"
-exit 1
 fi
 if [ $? -ne 0 ]
 then 
