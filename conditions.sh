@@ -1,3 +1,4 @@
+USERID=$(id -u)
 if [ $USERID -eq 0 ]
 then
 echo "Installing mysql in mobx"
