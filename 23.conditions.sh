@@ -1,0 +1,12 @@
+dnf install nginx -y
+if [ $? -eq o ]
+then
+ echo "install nginx successfully"
+else
+echo "install nginx failed"
+if [ $? -ne 0 ]
+then 
+echo "bad day "
+else
+echo "good day"
+fi
