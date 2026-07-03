@@ -20,4 +20,3 @@ fi
 
 dnf install nginx -y
 function_ravi
-function_raju
