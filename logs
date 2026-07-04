@@ -4,7 +4,7 @@ g=\e[32m
 b=\e[34m
 n=\e[0m
 LOGS_FOLDER=/var/log/shell-practioce3
-SCRIPT_NAME=LOG.LOG
+SCRIPT_NAME=$(logs.log)
 FILE_NAME=$LOGS_FOLDER/$SCRIPT_NAME
 mkdir -p $LOGS_FOLDER
 echo -e "Hello World" | tee -a $FILE_NAME
