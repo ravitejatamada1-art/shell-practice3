@@ -8,7 +8,7 @@ validation()
     echo -e"install of \e[31m$2\e[0m is failed"
     fi
 }
-mkdir -p /var/log/shell-logs
+sudo mkdir -p /var/log/shell-logs
 folder_name=shell_logs
 script_name=$logs.log
 file_name=$shell_logs/$script_name
