@@ -15,6 +15,6 @@ sudo mkdir -p shell-logs
 folder_name="/var/log/shell-logs"
 script_name=$logs.log 
 file_name="$folder_name/$script_name.log"
-dnf install $Ravi -y | tee -a $file_name
+dnf install $Ravi -y &>> $file_name
 validation $? $Ravi
 done
