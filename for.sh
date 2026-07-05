@@ -3,9 +3,9 @@ validation()
 {
     if [ $1 -eq 0 ]
     then 
-    echo "installed \e[35m$2\e[0m is successful"
+    echo -e "installed \e[35m$2\e[0m is successful"
     else
-    echo "install of \e[31m$2\e[0m is failed"
+    echo -e"install of \e[31m$2\e[0m is failed"
     fi
 }
 for Ravi in {nginx,python3,mysql}
