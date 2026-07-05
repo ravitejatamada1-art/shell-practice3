@@ -11,10 +11,9 @@ validation()
 
 for Ravi in {nginx,python3,mysql}
 do
-sudo mkdir -p shell-logs
+sudo mkdir -p /var/log/shell-logs
 folder_name="/var/log/shell-logs"
-script_name=$logs.log 
-file_name="$folder_name/$script_name.log"
+file_name="/var/log/shell-logs/logs.log"
 dnf install $Ravi -y &>> $file_name
 validation $? $Ravi
 done
