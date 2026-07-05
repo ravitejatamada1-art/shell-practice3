@@ -1,7 +1,7 @@
 
 validation()
 {
-    if [ $? -eq 0 ]
+    if [ $1 -eq 0 ]
     then 
     echo "installed $Ravi is successful"
     else
@@ -11,5 +11,5 @@ validation()
 for Ravi in {nginx,python3,mysql}
 do
 dnf install $Ravi -y
-validation ()
+validation $? $Ravi
 done
