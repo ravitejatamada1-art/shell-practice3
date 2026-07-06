@@ -6,11 +6,12 @@ ZONE_ID=Z08964191DFKFWEA2YRY0
 DOMAIN_NAME="roboshop.bond"
 for instance in ${INSTANCES[@]}
 do 
-INSTANCE_ID=$(aws ec2 run-instances --image-id ami-0220d79f3f480ecf5 --instance-type t2.micro --security-type-ids sg-026381a5a2005e8e7 --tag-specifications "ResourceType=instance,tags=[{Key=Name,value=$instance}] --query "Instances[0].INSTANCEID" --output text)
+INSTANCE_ID=$(aws ec2 run-instances --image-id ami-0220d79f3f480ecf5 --instance-type t3.micro --security-group-ids sg-026381a5a2005e8e7 --tag-specifications "ResourceType=instance,tags=[{Key=Name,Value=$instance}]" --query "Instances[0].InstanceID" --output text)
   if [ $instance != frontend" ]
   then
       IP=$(aws ec2 describe-instance --instance-ids $INSTANCE_ID --query "Reservations[0].Instances[0].PrivateIpAddress" --output.text)
   else
       IP=$(aws ec2 describe-instance --instance-ids $INSTANCE_ID --query "Reservations[0].Instances[0].PublicIpAddress" --output text)
      fi
-  done
+     echo"$Instance Ip Address:$Ip"
+done
