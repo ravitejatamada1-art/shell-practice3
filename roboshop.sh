@@ -13,5 +13,5 @@ INSTANCE_ID=$(aws ec2 run-instances --image-id ami-0220d79f3f480ecf5 --instance-
   else
       IP=$(aws ec2 describe-instance --instance-ids $INSTANCE_ID --query "Reservations[0].Instances[0].PublicIpAddress" --output text)
      fi
-     echo"$Instance Ip Address:$Ip"
+     echo "$instance Ip Address:$IP"
 done
