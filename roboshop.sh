@@ -1,4 +1,4 @@
-31/bin/bash
+#31/bin/bash
 AMI_ID="ami-0220d79f3f480ecf5"
 SG_ID="sg-026381a5a2005e8e7"
 INSTANCES=("MONGODB" "REDIS" "MYSQL" "RABBITNQ" "CATALOGUE" "USER" "CART" "SHIPPING" "PAYMENT" "DISPATCH" "FRONTEND")
@@ -10,8 +10,8 @@ INSTANCE_ID=$(aws ec2 run-instances --image-id ami-0220d79f3f480ecf5 --instance-
   if [ $instance != frontend" ]
   then
       IP=$(aws ec2 describe-instance --instance-ids $INSTANCE_ID --query "Reservations[0].Instances[0].PrivateIpAddress --output.text)
-else
-     IP=$(aws ec2 describe-instancess --instance-ids $INSTANCE_ID --query "Reservations[0].Instances[0].PublicIpAddress --output text)
+  else
+      IP=$(aws ec2 describe-instance --instance-ids $INSTANCE_ID --query "Reservations[0].Instances[0].PublicIpAddress --output text)
      fi
 
 done
