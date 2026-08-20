@@ -5,7 +5,7 @@ N="\e[0m"
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-logs"
 SCRIPT_NAME="deleting.log"
-SOURCE_DIR=/home/ec2-user/app-logs
+SOURCE_DIR=/home/ec2-user/shell-practice3/app-logs
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME"
 mkdir -p $LOGS_FOLDER 
 if [ $USERID -eq 0 ]
