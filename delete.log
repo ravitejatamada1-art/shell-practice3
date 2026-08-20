@@ -7,7 +7,7 @@ LOGS_FOLDER="/var/log/shell-logs"
 SCRIPT_NAME="deleting.log"
 SOURCE_DIR=/home/ec2-user/app-logs
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME"
-mkdir -p $LOGS_FOLDER
+mkdir -p $LOGS_FOLDER 
 if [ $USERID -eq 0 ]
 then 
 echo "you are Running with Root User" |tee -a $LOG_FILE
