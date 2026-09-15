@@ -1,4 +1,5 @@
-LOG_FILE=SOURCE_DIR
+LOG_FILE=$LOG_FOLDER/ravi1.log
+LOG_FOLDER=/var/log/Ravi-logs2
 
 if [ $USERID -eq 0 ]
 then 
