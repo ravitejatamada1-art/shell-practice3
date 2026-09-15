@@ -1,5 +1,6 @@
 LOG_FILE=$LOG_FOLDER/ravi1.log
 LOG_FOLDER=/var/log/Ravi-logs2
+mkdir -p $LOG-FOLDER
 
 if [ $USERID -eq 0 ]
 then 
